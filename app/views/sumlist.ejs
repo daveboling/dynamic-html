@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/styles2.css">
+	<title>Sumlist</title>
+</head>
+<body>
+
+<table>
+	<% for(var i = 0; i < list.length; i++) { 
+			var col = (list[i] % 2 === 0) ? even : odd;
+
+	%>
+			<tr style="color: <%= col %>;"><td><%= list[i] %></td></tr>
+	<% } %>
+			<tr><td><%= sum %></td></tr>
+
+</table>
+	
+</body>
+</html>

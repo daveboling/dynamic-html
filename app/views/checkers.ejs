@@ -7,23 +7,6 @@
 </head>
 <body>
 	<div>
-<!--
-	for(var i = 0; i < 8; i++){
-		//create row
-
-		//if odd, class = odd
-
-		//else class = even
-
-		for(var k = 0; k < 8; k++) {
-			//create column
-
-			//if odd, class = colOdd
-
-			//else, class = colEven
-		}
-	}	
--->
 <table>
 	<% 	var s = 0;
 		var type;
@@ -31,7 +14,6 @@
 		<tr>
 		<% for(var k = 1; k <= 8; k++) { 
 			s++
-			console.log(s);
 				if( s == 2 || s == 4 || s == 6 || s == 8 ||
 					s == 9 || s == 11 || s == 13 || s == 15 ||
 					s == 18 || s == 20 || s == 22 || s == 24) { type = 'red'}

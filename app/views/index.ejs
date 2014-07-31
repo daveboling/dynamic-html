@@ -2,44 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/css/styles.css">
-	<title>Home</title>
+	<title>Index</title>
 </head>
 <body>
-	<!-- EJS Variables -->
-	<% var blue = 'blue'; %>
-	<h1 style="background-color: <%= blue %>;">Test 2</h1>
-
-
-	<!-- EJS Random Number Genereation Ctd -->
-<ol>
-	<% for(var i = 0; i < 5; i++) { %>
-	<li> <%= Math.floor(Math.random()* 9 + 3) %></li>
-	<% } %>
-</ol>
-	<!-- EJS Random Number Genereation Ctd -->
-	<h1>Test <%= Math.floor(Math.random()* 9 )+ 3 %></h1>
-
-	<!-- EJS If/Else -->
-	<% if(5 === 5) { %>
-	<p>it is true</p>
-	<% }else { %>
-	<p>it is false</p>
-	<% } %>
-
-	<!-- EJS Inline CSS -->
-	<% var colors = ['blue', 'green', 'yellow', 'orange', 'BlueViolet', 'Crimson', 'BurlyWood']
-	   var fonts = ['Roboto', 'sans-serif', 'Arial']		
-	   var pixels = 10
-	%>
-	<% for (var k = 0; k < colors.length; k++) {
-		var col = (k === colors.length - 1) ? colors[0] : colors[k+1]
-		%>
-	<p style="color: <%= colors[k] %>; font-size: <%= pixels += 2 %>px; background-color: <%= col %>; font-family: <%= fonts[k%3] %>;"> <%= colors[k] %> </p>
-	<% 
-	 } %>
-
-
-
+<p>Test Paragraph</p>
+	
 </body>
 </html>

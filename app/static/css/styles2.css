@@ -1,0 +1,51 @@
+tr:nth-child(even){
+	background-color: gray;
+}
+
+td {
+	border: 5px solid black;
+
+}
+
+body, html{
+	font-size: 75px;
+}
+
+div {
+	height: 50px;
+	width: 50px;
+}
+
+div {
+	height: 50px;
+	width: 50px;
+}
+.roll1 {
+	background-image: url('/images/dice/1.jpg');
+	background-size: cover;
+}
+
+.roll2 {
+	background-image: url('/images/dice/2.png');
+	background-size: cover;
+}
+
+.roll3 {
+	background-image: url('/images/dice/3.png');
+	background-size: cover;
+}
+
+.roll4 {
+	background-image: url('/images/dice/4.png');
+	background-size: cover;
+}
+
+.roll5 {
+	background-image: url('/images/dice/5.png');
+	background-size: cover;
+}
+
+.roll6 {
+	background-image: url('/images/dice/6.png');
+	background-size: cover;
+}

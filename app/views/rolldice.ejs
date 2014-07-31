@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/styles2.css">
+	<title>Dice Roll</title>
+</head>
+<body>
+<div>
+	<% var dice;
+	   var sum = 0;
+	for(var i = 0; i < rolls; i++){
+		var random = Math.floor((Math.random() * 5) + 1);
+		sum += random;
+		switch (random) {
+			case 1:
+				dice = 'roll1';
+				break;
+			case 2:
+				dice = 'roll2';
+				break;
+			case 3:
+				dice = 'roll3';
+				break;
+			case 4:
+				dice = 'roll4';
+				break;
+			case 5:
+				dice = 'roll5';
+				break;
+			case 6:
+				dice = 'roll6';
+		}
+
+	%>
+		<div class="<%= dice %>"></div>
+
+	<% } %>
+		<div> <%= sum %> </div>
+</div>
+</body>
+</html>

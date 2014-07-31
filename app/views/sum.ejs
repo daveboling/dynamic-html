@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sum</title>
+</head>
+<body>
+<h1>Sum</h1>
+<h2>
+
+<%= x %> + <%= y %> + <%= z %>+ <%= n %> = 
+<% var col = ''
+   if(((x + y + z + n) % 2) === 0) { col = 'blue'} 
+   else { col = 'red'}
+%>
+<span style="color: <%= col %>; font-size: <%= fontsize %>; border: <%= borderwidth %>px solid <%= color %>"><%= x + y + z + n %></span></h2>
+
+	
+</body>
+</html>
